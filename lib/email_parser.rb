@@ -5,15 +5,15 @@
 class EmailAddressParser
   attr_accessor :emails
   
-  @@email_addresses = []
+  
   
   def initialize(emails)
     @emails = emails
-    @@email_addresses << self
+
   end
   
   def parse
-    @emails.split(/\w+/)
+    @emails.split(/)
   end
   
 end
